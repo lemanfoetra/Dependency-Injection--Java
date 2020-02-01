@@ -16,7 +16,13 @@ public class DependencyInjection {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.print("test");
+        Car car = new Car();
+        Motorcycle motor = new Motorcycle();
+        System.out.println(car.fillUp());
+        System.out.println();
+        System.out.println(motor.fillUp());
+        
+        
     }
     
 }
