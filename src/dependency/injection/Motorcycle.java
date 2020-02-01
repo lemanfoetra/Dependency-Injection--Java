@@ -11,12 +11,11 @@ package dependency.injection;
  */
 public class Motorcycle {
     
-    private Premium fuel = new Premium();
-        
-    public String fillUp(){
-        String text = "Motor ini harus diisi bahan bakar :"+this.fuel.getName();
-                text += " - Yang ber oktan : "+this.fuel.getOctane();
-                text += " - Dengan harga perliter serbesar : "+this.fuel.getPrice();
+    
+    public String fillUp(Fuel fuel){
+        String text = "Motor ini harus diisi bahan bakar :"+fuel.getName();
+                text += " - Yang ber oktan : "+fuel.getOctane();
+                text += " - Dengan harga perliter serbesar : "+fuel.getPrice();
         return text;
     }
 }

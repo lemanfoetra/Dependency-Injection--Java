@@ -16,11 +16,17 @@ public class DependencyInjection {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+ 
+        Premium premium = new Premium();
+        Pertamax pertamax = new Pertamax();
+        
         Car car = new Car();
         Motorcycle motor = new Motorcycle();
-        System.out.println(car.fillUp());
+        
+        System.out.println(car.fillUp(premium));
         System.out.println();
-        System.out.println(motor.fillUp());
+        System.out.println(motor.fillUp(pertamax));
         
         
     }

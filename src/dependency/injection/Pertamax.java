@@ -9,25 +9,25 @@ package dependency.injection;
  *
  * @author lemanfoetra
  */
-public class Premium implements Fuel {
+public class Pertamax implements Fuel {
     
-    private String  name    = "Permium";
-    private int     price   = 9000;
-    private int     octane  = 90;
-    
-    
+    private String  name     = "Pertamax";
+    private int     octane  = 99;
+    private int     price   = 10000;
+
     @Override
-    public String getName(){
+    public String getName() {
         return this.name;
     }
-    
+
     @Override
-    public int getPrice(){
+    public int getPrice() {
         return this.price;
     }
-    
+
     @Override
-    public int getOctane(){
+    public int getOctane() {
         return this.octane;
     }
+    
 }
